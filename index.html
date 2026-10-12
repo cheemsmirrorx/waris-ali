@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Waris Ali | Web Developer &amp; Designer</title>
+  <meta name="description" content="Portfolio of Waris Ali - Junior Web Developer and Designer specializing in modern, responsive websites using React and Tailwind CSS.">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <!-- Typography: Google Fonts matching the reference -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="mono-sharp">
+
+  <!-- Top Scroll Progress Bar -->
+  <div id="scroll-progress" aria-hidden="true">
+    <div id="scroll-progress-fill"></div>
+  </div>
+
+  <!-- Custom Magnetic Difference Cursor -->
+  <div class="t-cursor" id="custom-cursor" aria-hidden="true">
+    <div class="t-cursor-inner"></div>
+  </div>
+
+  <!-- Fullscreen Minimalist Monochrome Intro Curtain -->
+  <div id="intro-overlay" class="intro-cover" aria-hidden="true">
+    <div class="intro-header">
+      <span class="intro-name">Waris Ali</span>
+      <span class="intro-year">Portfolio 2026</span>
+    </div>
+    <div class="intro-footer">
+      <div id="intro-count" class="intro-counter">000</div>
+      <div id="intro-progress-bar" class="intro-bar"></div>
+    </div>
+  </div>
+
+  <!-- Site Navigation -->
+  <nav class="site-nav mono-sharp" id="main-nav">
+    <div class="t-wrap nav-content">
+      <a class="nav-logo" href="/" style="font-family:'Playfair Display', Georgia, serif;">WARIS.</a>
+      
+      <!-- Desktop Navigation Links -->
+      <ul class="nav-links-desktop" id="navbar">
+        <li><a class="t-ul" href="#about">About</a></li>
+        <li><a class="t-ul" href="#projects">Projects</a></li>
+        <li><a class="t-ul" href="#skills">Skills</a></li>
+        <li><a class="t-ul" href="#services">Services</a></li>
+        <li><a class="t-ul" href="#contact">Contact</a></li>
+      </ul>
+
+      <!-- Mobile Menu Trigger -->
+      <button class="mobile-menu-btn" id="mobile-toggle" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+          <path fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd"></path>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer" id="mobile-menu" aria-hidden="true">
+    <ul class="mobile-nav-list">
+      <li class="mobile-nav-item">
+        <a class="mobile-nav-link" href="#about">
+          <span class="mobile-nav-index">01</span>
+          <span class="mobile-nav-title">About</span>
+        </a>
+      </li>
+      <li class="mobile-nav-item">
+        <a class="mobile-nav-link" href="#projects">
+          <span class="mobile-nav-index">02</span>
+          <span class="mobile-nav-title">Projects</span>
+        </a>
+      </li>
+      <li class="mobile-nav-item">
+        <a class="mobile-nav-link" href="#skills">
+          <span class="mobile-nav-index">03</span>
+          <span class="mobile-nav-title">Skills</span>
+        </a>
+      </li>
+      <li class="mobile-nav-item">
+        <a class="mobile-nav-link" href="#services">
+          <span class="mobile-nav-index">04</span>
+          <span class="mobile-nav-title">Services</span>
+        </a>
+      </li>
+      <li class="mobile-nav-item">
+        <a class="mobile-nav-link" href="#contact">
+          <span class="mobile-nav-index">05</span>
+          <span class="mobile-nav-title">Contact</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <main class="t-page">
+
+    <!-- HERO SECTION -->
+    <section id="top" class="t-clip-x">
+      <div class="t-wrap hero-inner">
+        <!-- Top Metadata Row -->
+        <div class="hero-meta t-muted t-label" data-fade>
+          <span id="hero-scramble-text" data-scramble="true">Portfolio · 2026</span>
+          <span>Uttar Pradesh, IN</span>
+        </div>
+
+        <!-- Main Display Headline -->
+        <div class="hero-center" data-parallax>
+          <h1 class="hero-title" aria-label="Waris Ali" id="hero-headline">
+            <span class="hero-line">Waris</span><br>
+            <span class="hero-line">Ali.</span>
+          </h1>
+
+          <div class="hero-content-split">
+            <!-- Left Info & CTA Group -->
+            <div class="hero-left-col">
+              <p class="t-lead" data-fade>
+                Self-taught full-stack developer building considered, responsive products with Next.js, React and Supabase.
+              </p>
+              
+              <div class="hero-btn-group" data-fade>
+                <div class="magnetic-wrap">
+                  <a class="t-btn" href="#projects">View projects</a>
+                </div>
+                <div class="magnetic-wrap">
+                  <a class="t-btn t-btn--ghost" href="#contact">Get in touch</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Profile Specifications -->
+            <dl class="hero-spec-list" data-fade>
+              <span class="t-rule block"></span>
+              <div class="hero-spec-row">
+                <dt>Focus</dt>
+                <dd>Next.js · React · TypeScript · Java · Kotlin · C++</dd>
+              </div>
+              <div class="hero-spec-row">
+                <dt>Flagship</dt>
+                <dd>Waris' Fav Songs</dd>
+              </div>
+              <div class="hero-spec-row">
+                <dt>Building since</dt>
+                <dd>July 2023</dd>
+              </div>
+              <div class="hero-spec-row">
+                <dt>Based in</dt>
+                <dd>Uttar Pradesh, IN</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+
+        <!-- Bottom Scroll Indicator -->
+        <div class="hero-scroll-cue t-label t-muted" data-fade>
+          <span>Scroll</span>
+          <span class="scroll-line-track">
+            <span class="scroll-line-runner"></span>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNOLOGIES TICKER (DUAL VELOCITY MARQUEE) -->
+    <section class="ticker-section" aria-label="Technologies I work with">
+      <div class="ticker-container" id="ticker-container">
+        <!-- Row 1: Solid Typography -->
+        <div class="ticker-track-wrap">
+          <div class="ticker-track" id="ticker-track-1">
+            <div class="ticker-content" style="display: flex; align-items: center;">
+              <span class="ticker-item">Next.js</span>
+              <span class="ticker-glyph"></span>
+              <span class="ticker-item is-italic">React</span>
+              <span class="ticker-glyph"></span>
+              <span class="ticker-item">TypeScript</span>
+              <span class="ticker-glyph"></span>
+              <span class="ticker-item is-italic">Supabase</span>
+              <span class="ticker-glyph"></span>
+              <span class="ticker-item">FastAPI</span>
+              <span class="ticker-glyph"></span>
+              <span class="ticker-item is-italic">Claude API</span>
+              <span class="ticker-glyph"></span>
+              <span class="ticker-item">GSAP</span>
+              <span class="ticker-glyph"></span>
+              <span class="ticker-item is-italic">Tailwind</span>
+              <span class="ticker-glyph"></span>
+            </div>
+            <div class="ticker-content" aria-hidden="true" style="display: flex; align-items: center;">
+              <span class="ticker-item">Next.js</span>
+              <span class="ticker-glyph"></span>
+              <span class="ticker-item is-italic">React</span>
+              <span class="ticker-glyph"></span>
+              <span class="ticker-item">TypeScript</span>
+              <span class="ticker-glyph"></span>
+              <span class="ticker-item is-italic">Supabase</span>
+              <span class="ticker-glyph"></span>
+              <span class="ticker-item">FastAPI</span>
+              <span class="ticker-glyph"></span>
+              <span class="ticker-item is-italic">Claude API</span>
+              <span class="ticker-glyph"></span>
+              <span class="ticker-item">GSAP</span>
+              <span class="ticker-glyph"></span>
+              <span class="ticker-item is-italic">Tailwind</span>
+              <span class="ticker-glyph"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 2: Outline Typography -->
+        <div class="ticker-track-wrap">
+          <div class="ticker-track" id="ticker-track-2">
+            <div class="ticker-content" style="display: flex; align-items: center;">
+              <span class="ticker-item t-outline">Next.js</span>
+              <span class="ticker-glyph t-outline"></span>
+              <span class="ticker-item t-outline is-italic">React</span>
+              <span class="ticker-glyph t-outline"></span>
+              <span class="ticker-item t-outline">TypeScript</span>
+              <span class="ticker-glyph t-outline"></span>
+              <span class="ticker-item t-outline is-italic">Supabase</span>
+              <span class="ticker-glyph t-outline"></span>
+              <span class="ticker-item t-outline">FastAPI</span>
+              <span class="ticker-glyph t-outline"></span>
+              <span class="ticker-item t-outline is-italic">Claude API</span>
+              <span class="ticker-glyph t-outline"></span>
+              <span class="ticker-item t-outline">GSAP</span>
+              <span class="ticker-glyph t-outline"></span>
+              <span class="ticker-item t-outline is-italic">Tailwind</span>
+              <span class="ticker-glyph t-outline"></span>
+            </div>
+            <div class="ticker-content" aria-hidden="true" style="display: flex; align-items: center;">
+              <span class="ticker-item t-outline">Next.js</span>
+              <span class="ticker-glyph t-outline"></span>
+              <span class="ticker-item t-outline is-italic">React</span>
+              <span class="ticker-glyph t-outline"></span>
+              <span class="ticker-item t-outline">TypeScript</span>
+              <span class="ticker-glyph t-outline"></span>
+              <span class="ticker-item t-outline is-italic">Supabase</span>
+              <span class="ticker-glyph t-outline"></span>
+              <span class="ticker-item t-outline">FastAPI</span>
+              <span class="ticker-glyph t-outline"></span>
+              <span class="ticker-item t-outline is-italic">Claude API</span>
+              <span class="ticker-glyph t-outline"></span>
+              <span class="ticker-item t-outline">GSAP</span>
+              <span class="ticker-glyph t-outline"></span>
+              <span class="ticker-item t-outline is-italic">Tailwind</span>
+              <span class="ticker-glyph t-outline"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SELECTED WORK / PROJECTS SECTION -->
+    <section id="projects" class="t-sect scroll-mt-16 t-clip-x">
+      <div class="t-wrap">
+        <header class="section-header">
+          <div class="section-meta-row t-label" data-fade>
+            <span>01 — Work</span>
+            <span>01 project</span>
+          </div>
+          <span class="t-rule" data-rule></span>
+          <h2 class="t-h2 mt-8 md:mt-10" style="margin-top:2rem;" data-split>Selected work</h2>
+        </header>
+
+        <!-- Flagship Project: Waris' Fav Songs -->
+        <article class="flagship-article">
+          <div class="flagship-visual">
+            <div class="t-frame" data-clip>
+              <img src="images/projects/warisfavsongs.jpg" alt="Waris' Fav Songs screenshot" loading="lazy">
+              <span class="t-halftone"></span>
+            </div>
+          </div>
+
+          <div class="flagship-info">
+            <div class="t-label" style="display:flex; align-items:center; gap:0.75rem;" data-fade>
+              <span>01</span>
+              <span class="t-chip t-chip--solid">Flagship · Case study</span>
+            </div>
+
+            <h3 class="t-h3" style="font-size:clamp(1.9rem, 3.6vw, 3rem);" data-fade>
+              Waris' Fav Songs
+              <span class="project-title-sub">Personal Music Playlist Experience</span>
+            </h3>
+
+            <p class="t-prose" data-fade>
+              A personal web-based music playlist experience built from scratch during my 1st semester BCA. Features audio playback controls, custom modern UI, responsive layout, and visual album artwork.
+            </p>
+
+            <ul class="tag-list" data-fade>
+              <li class="t-chip">HTML5</li>
+              <li class="t-chip">CSS3</li>
+              <li class="t-chip">JavaScript</li>
+              <li class="t-chip">Audio API</li>
+              <li class="t-chip">Vercel</li>
+            </ul>
+
+            <div class="project-actions" data-fade>
+              <div class="magnetic-wrap">
+                <button class="t-btn open-case-study-btn" data-slug="waris-fav-songs">Read case study →</button>
+              </div>
+              <div class="magnetic-wrap">
+                <a href="https://warisfavsongs.vercel.app/" target="_blank" rel="noopener noreferrer" class="t-btn t-btn--ghost">Live demo ↗</a>
+              </div>
+              <div class="magnetic-wrap">
+                <a href="https://github.com/cheemsmirrorx/waris-fav-song-playlist" target="_blank" rel="noopener noreferrer" class="t-btn t-btn--ghost">Source ↗</a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="t-sect scroll-mt-16">
+      <div class="t-wrap">
+        <div class="skills-header-bar">
+          <h2 class="t-h2" style="font-size:clamp(2rem, 4vw, 3rem);">Skills</h2>
+          <span class="t-label t-muted">what i work with</span>
+        </div>
+      </div>
+
+      <div class="skills-track-viewport" id="skills-viewport">
+        <div class="skills-track t-wrap" id="skills-track">
+
+          <!-- 01 Languages -->
+          <div class="skills-card-wrapper">
+            <div class="skills-card mono-sharp">
+              <header>
+                <p class="skills-card-category"><span aria-hidden="true">■ </span>Category</p>
+                <h3 class="skills-card-title">Languages</h3>
+                <p class="skills-card-caption">— Programming languages I work with</p>
+              </header>
+              <div class="skills-chip-list">
+                <span class="skills-chip"><span class="skills-chip-dash">—</span><span class="skills-chip-text">TypeScript</span></span>
+                <span class="skills-chip"><span class="skills-chip-dash">—</span><span class="skills-chip-text">JavaScript</span></span>
+                <span class="skills-chip"><span class="skills-chip-dash">—</span><span class="skills-chip-text">Python</span></span>
+                <span class="skills-chip"><span class="skills-chip-dash">—</span><span class="skills-chip-text">HTML5</span></span>
+                <span class="skills-chip"><span class="skills-chip-dash">—</span><span class="skills-chip-text">CSS3</span></span>
+                <span class="skills-chip"><span class="skills-chip-dash">—</span><span class="skills-chip-text">SQL</span></span>
+              </div>
+              <div class="skills-card-line" aria-hidden="true"></div>
+            </div>
+          </div>
+
+          <!-- 02 Frontend -->
+          <div class="skills-card-wrapper">
+            <div class="skills-card mono-sharp">
+              <header>
+                <p class="skills-card-category"><span aria-hidden="true">■ </span>Category</p>
+                <h3 class="skills-card-title">Frontend</h3>
+                <p class="skills-card-caption">— Interfaces I build every day</p>
+              </header>
+              <div class="skills-chip-list">
+                <span class="skills-chip"><span class="skills-chip-dash">—</span><span class="skills-chip-text">React</span></span>
+                <span class="skills-chip"><span class="skills-chip-dash">—</span><span class="skills-chip-text">Next.js</span></span>
+                <span class="skills-chip"><span class="skills-chip-dash">—</span><span class="skills-chip-text">Vite</span></span>
+                <span class="skills-chip"><span class="skills-chip-dash">—</span><span class="skills-chip-text">Tailwind CSS</span></span>
+                <span class="skills-chip"><span class="skills-chip-dash">—</span><span class="skills-chip-text">Framer Motion</span></span>
+                <span class="skills-chip"><span class="skills-chip-dash">—</span><span class="skills-chip-text">GSAP</span></span>
+                <span class="skills-chip"><span class="skills-chip-dash">—</span><span class="skills-chip-text">React Router</span></span>
+                <span class="skills-chip"><span class="skills-chip-dash">—</span><span class="skills-chip-text">Redux Toolkit</span></span>
+                <span class="skills-chip"><span class="skills-chip-dash">—</span><span class="skills-chip-text">Material UI</span></span>
+                <span class="skills-chip"><span class="skills-chip-dash">—</span><span class="skills-chip-text">Bootstrap</span></span>
+              </div>
+              <div class="skills-card-line" aria-hidden="true"></div>
+            </div>
+          </div>
+
+          <!-- 03 Backend -->
+          <div class="skills-card-wrapper">
+            <div class="skills-card mono-sharp">
+              <header>
+                <p class="skills-card-category"><span aria-hidden="true">■ </span>Category</p>
+                <h3 class="skills-card-title">Backend</h3>
+                <p class="skills-card-caption">— Servers, APIs, and databases</p>
+              </header>
+              <div class="skills-chip-list">
+                <span class="skills-chip"><span class="skills-chip-dash">—</span><span class="skills-chip-text">Node.js</span></span>
+                <span class="skills-chip"><span class="skills-chip-dash">—</span><span class="skills-chip-text">Express.js</span></span>
+                <span class="skills-chip"><span class="skills-chip-dash">—</span><span class="skills-chip-text">FastAPI</span></span>
+                <span class="skills-chip"><span class="skills-chip-dash">—</span><span class="skills-chip-text">JWT Authentication</span></span>
+                <span class="skills-chip"><span class="skills-chip-dash">—</span><span class="skills-chip-text">Supabase</span></span>
+                <span class="skills-chip"><span class="skills-chip-dash">—</span><span class="skills-chip-text">MongoDB</span></span>
+                <span class="skills-chip"><span class="skills-chip-dash">—</span><span class="skills-chip-text">PostgreSQL</span></span>
+              </div>
+              <div class="skills-card-line" aria-hidden="true"></div>
+            </div>
+          </div>
+
+          <!-- 04 DevOps -->
+          <div class="skills-card-wrapper">
+            <div class="skills-card mono-sharp">
+              <header>
+                <p class="skills-card-category"><span aria-hidden="true">■ </span>Category</p>
+                <h3 class="skills-card-title">DevOps</h3>
+                <p class="skills-card-caption">— Building, deploying, and collaborating</p>
+              </header>
+              <div class="skills-chip-list">
+                <span class="skills-chip"><span class="skills-chip-dash">—</span><span class="skills-chip-text">Git</span></span>
+                <span class="skills-chip"><span class="skills-chip-dash">—</span><span class="skills-chip-text">GitHub</span></span>
+                <span class="skills-chip"><span class="skills-chip-dash">—</span><span class="skills-chip-text">GitHub Actions</span></span>
+                <span class="skills-chip"><span class="skills-chip-dash">—</span><span class="skills-chip-text">Docker</span></span>
+                <span class="skills-chip"><span class="skills-chip-dash">—</span><span class="skills-chip-text">Vercel</span></span>
+                <span class="skills-chip"><span class="skills-chip-dash">—</span><span class="skills-chip-text">Netlify</span></span>
+              </div>
+              <div class="skills-card-line" aria-hidden="true"></div>
+            </div>
+          </div>
+
+          <!-- 05 Design -->
+          <div class="skills-card-wrapper">
+            <div class="skills-card mono-sharp">
+              <header>
+                <p class="skills-card-category"><span aria-hidden="true">■ </span>Category</p>
+                <h3 class="skills-card-title">Design</h3>
+                <p class="skills-card-caption">— Design and animation tools</p>
+              </header>
+              <div class="skills-chip-list">
+                <span class="skills-chip"><span class="skills-chip-dash">—</span><span class="skills-chip-text">Figma</span></span>
+                <span class="skills-chip"><span class="skills-chip-dash">—</span><span class="skills-chip-text">Framer Motion</span></span>
+                <span class="skills-chip"><span class="skills-chip-dash">—</span><span class="skills-chip-text">GSAP</span></span>
+              </div>
+              <div class="skills-card-line" aria-hidden="true"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION (3D STACKED CARDS) -->
+    <section id="services" class="t-sect scroll-mt-16">
+      <div class="t-wrap" style="padding-bottom: 2rem;">
+        <header class="section-header" style="max-width: 48rem;">
+          <p class="t-label t-muted" style="margin-bottom:0.75rem;">— Chapter IV</p>
+          <h2 class="t-h2">The Services</h2>
+          <p class="t-prose" style="font-style:italic; font-family:var(--font-secondary); margin-top:1rem; color:var(--text-tertiary);">
+            — A considered catalogue of the capabilities I bring to a project.
+          </p>
+          <div class="t-rule" style="width:4rem; margin-top:1.5rem;" aria-hidden="true"></div>
+        </header>
+      </div>
+
+      <div class="services-stage-wrap" id="services-stage-wrap">
+        <div class="services-stage-container">
+          <div class="services-stage" id="services-stage">
+
+            <!-- 01 Prompt Engineering -->
+            <div class="services-slot">
+              <div class="service-stack-card mono-sharp">
+                <div>
+                  <div class="service-card-meta">
+                    <span>01 of 12</span>
+                    <span>AI</span>
+                  </div>
+                  <div class="service-card-icon" aria-hidden="true">
+                    <svg fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M9 4a3 3 0 00-3 3v1a3 3 0 00-2 5.7V16a3 3 0 003 3h.5a2 2 0 003.9-.5M15 4a3 3 0 013 3v1a3 3 0 012 5.7V16a3 3 0 01-3 3h-.5a2 2 0 01-3.9-.5"></path><path d="M12 4v16"></path><path d="M9 9h.01M15 9h.01M9 13h.01M15 13h.01"></path></svg>
+                  </div>
+                  <h3 class="service-card-title">Prompt Engineering</h3>
+                  <p class="service-card-desc">— Design and refine AI prompts to consistently produce accurate, structured, and high-quality outputs tailored to real-world use cases.</p>
+                </div>
+                <div class="service-card-footer">
+                  <span>Continue on next page</span>
+                  <span>—</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 02 System Planning -->
+            <div class="services-slot">
+              <div class="service-stack-card mono-sharp">
+                <div>
+                  <div class="service-card-meta">
+                    <span>02 of 12</span>
+                    <span>Planning</span>
+                  </div>
+                  <div class="service-card-icon" aria-hidden="true">
+                    <svg fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="1"></rect><path d="M3 9h18M9 3v18M3 15h6M15 15h6M15 9h6"></path></svg>
+                  </div>
+                  <h3 class="service-card-title">System Planning</h3>
+                  <p class="service-card-desc">— Architect scalable systems by defining workflows, data flow, and technology stacks before development begins to ensure long-term stability.</p>
+                </div>
+                <div class="service-card-footer">
+                  <span>Continue on next page</span>
+                  <span>—</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 03 Full-Stack Development -->
+            <div class="services-slot">
+              <div class="service-stack-card mono-sharp">
+                <div>
+                  <div class="service-card-meta">
+                    <span>03 of 12</span>
+                    <span>Engineering</span>
+                  </div>
+                  <div class="service-card-icon" aria-hidden="true">
+                    <svg fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 3L2 8l10 5 10-5-10-5z"></path><path d="M2 13l10 5 10-5"></path><path d="M2 18l10 5 10-5"></path></svg>
+                  </div>
+                  <h3 class="service-card-title">Full-Stack Development</h3>
+                  <p class="service-card-desc">— Build complete end-to-end applications, integrating responsive frontends with robust backend systems and scalable databases.</p>
+                </div>
+                <div class="service-card-footer">
+                  <span>Continue on next page</span>
+                  <span>—</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 04 MERN Development -->
+            <div class="services-slot">
+              <div class="service-stack-card mono-sharp">
+                <div>
+                  <div class="service-card-meta">
+                    <span>04 of 12</span>
+                    <span>Stack</span>
+                  </div>
+                  <div class="service-card-icon" aria-hidden="true">
+                    <svg fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="8" ry="2.5"></ellipse><path d="M4 6v6c0 1.4 3.6 2.5 8 2.5s8-1.1 8-2.5V6"></path><path d="M4 12v6c0 1.4 3.6 2.5 8 2.5s8-1.1 8-2.5v-6"></path></svg>
+                  </div>
+                  <h3 class="service-card-title">MERN Development</h3>
+                  <p class="service-card-desc">— Develop fast, scalable web applications using MongoDB, Express, React, and Node.js with clean architecture and reusable components.</p>
+                </div>
+                <div class="service-card-footer">
+                  <span>Continue on next page</span>
+                  <span>—</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 05 Frontend Development -->
+            <div class="services-slot">
+              <div class="service-stack-card mono-sharp">
+                <div>
+                  <div class="service-card-meta">
+                    <span>05 of 12</span>
+                    <span>UI</span>
+                  </div>
+                  <div class="service-card-icon" aria-hidden="true">
+                    <svg fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="13" rx="1"></rect><path d="M8 21h8M12 17v4"></path></svg>
+                  </div>
+                  <h3 class="service-card-title">Frontend Development</h3>
+                  <p class="service-card-desc">— Create modern, responsive, and high-performance user interfaces with focus on usability, accessibility, and smooth user experience.</p>
+                </div>
+                <div class="service-card-footer">
+                  <span>Continue on next page</span>
+                  <span>—</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 06 UI/UX Design -->
+            <div class="services-slot">
+              <div class="service-stack-card mono-sharp">
+                <div>
+                  <div class="service-card-meta">
+                    <span>06 of 12</span>
+                    <span>Design</span>
+                  </div>
+                  <div class="service-card-icon" aria-hidden="true">
+                    <svg fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg>
+                  </div>
+                  <h3 class="service-card-title">UI/UX Design</h3>
+                  <p class="service-card-desc">— Design intuitive and visually balanced interfaces that improve user engagement through clarity, accessibility, and interaction flow.</p>
+                </div>
+                <div class="service-card-footer">
+                  <span>Continue on next page</span>
+                  <span>—</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 07 State Management -->
+            <div class="services-slot">
+              <div class="service-stack-card mono-sharp">
+                <div>
+                  <div class="service-card-meta">
+                    <span>07 of 12</span>
+                    <span>Architecture</span>
+                  </div>
+                  <div class="service-card-icon" aria-hidden="true">
+                    <svg fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="3" y="3" width="6" height="6" rx="1"></rect><rect x="15" y="15" width="6" height="6" rx="1"></rect><rect x="9" y="9" width="6" height="6" rx="1"></rect><path d="M9 6h6M12 9v6M6 9v3a3 3 0 003 3h3"></path></svg>
+                  </div>
+                  <h3 class="service-card-title">State Management</h3>
+                  <p class="service-card-desc">— Implement efficient and predictable state architectures to ensure scalable, maintainable, and performance-optimized applications.</p>
+                </div>
+                <div class="service-card-footer">
+                  <span>Continue on next page</span>
+                  <span>—</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 08 SaaS Product Development -->
+            <div class="services-slot">
+              <div class="service-stack-card mono-sharp">
+                <div>
+                  <div class="service-card-meta">
+                    <span>08 of 12</span>
+                    <span>Product</span>
+                  </div>
+                  <div class="service-card-icon" aria-hidden="true">
+                    <svg fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M18 10a5 5 0 00-9.6-1.5A4 4 0 006 16h11a4 4 0 001-7.9z"></path><path d="M12 12v6M9 15l3 3 3-3"></path></svg>
+                  </div>
+                  <h3 class="service-card-title">SaaS Product Development</h3>
+                  <p class="service-card-desc">— Build production-ready SaaS platforms with authentication, subscriptions, dashboards, and scalable multi-tenant architecture.</p>
+                </div>
+                <div class="service-card-footer">
+                  <span>Continue on next page</span>
+                  <span>—</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 09 API Integration -->
+            <div class="services-slot">
+              <div class="service-stack-card mono-sharp">
+                <div>
+                  <div class="service-card-meta">
+                    <span>09 of 12</span>
+                    <span>Integration</span>
+                  </div>
+                  <div class="service-card-icon" aria-hidden="true">
+                    <svg fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M9 2v6M15 2v6"></path><rect x="6" y="8" width="12" height="6" rx="2"></rect><path d="M12 14v3a4 4 0 01-4 4H7"></path></svg>
+                  </div>
+                  <h3 class="service-card-title">API Integration</h3>
+                  <p class="service-card-desc">— Integrate third-party and custom APIs seamlessly to extend functionality and enable dynamic, data-driven applications.</p>
+                </div>
+                <div class="service-card-footer">
+                  <span>Continue on next page</span>
+                  <span>—</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 10 Version Control -->
+            <div class="services-slot">
+              <div class="service-stack-card mono-sharp">
+                <div>
+                  <div class="service-card-meta">
+                    <span>10 of 12</span>
+                    <span>Workflow</span>
+                  </div>
+                  <div class="service-card-icon" aria-hidden="true">
+                    <svg fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><circle cx="6" cy="6" r="2.5"></circle><circle cx="6" cy="18" r="2.5"></circle><circle cx="18" cy="12" r="2.5"></circle><path d="M6 8.5v7"></path><path d="M18 9.5h-7a3 3 0 00-3 3v3"></path></svg>
+                  </div>
+                  <h3 class="service-card-title">Version Control</h3>
+                  <p class="service-card-desc">— Maintain clean and collaborative development workflows using Git, branching strategies, and team-based code management practices.</p>
+                </div>
+                <div class="service-card-footer">
+                  <span>Continue on next page</span>
+                  <span>—</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 11 Authentication & Security -->
+            <div class="services-slot">
+              <div class="service-stack-card mono-sharp">
+                <div>
+                  <div class="service-card-meta">
+                    <span>11 of 12</span>
+                    <span>Security</span>
+                  </div>
+                  <div class="service-card-icon" aria-hidden="true">
+                    <svg fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 3l8 4v6c0 4.5-3.4 8.6-8 9-4.6-.4-8-4.5-8-9V7l8-4z"></path><path d="M9 12l2 2 4-4"></path></svg>
+                  </div>
+                  <h3 class="service-card-title">Authentication &amp; Security</h3>
+                  <p class="service-card-desc">— Implement secure authentication systems, role-based access control, and best practices for protecting sensitive user data.</p>
+                </div>
+                <div class="service-card-footer">
+                  <span>Continue on next page</span>
+                  <span>—</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 12 AI Integration -->
+            <div class="services-slot">
+              <div class="service-stack-card mono-sharp">
+                <div>
+                  <div class="service-card-meta">
+                    <span>12 of 12</span>
+                    <span>AI</span>
+                  </div>
+                  <div class="service-card-icon" aria-hidden="true">
+                    <svg fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="12" rx="3"></rect><path d="M12 4v4M9 13h.01M15 13h.01M9 17h6"></path><circle cx="7.5" cy="13" r="0.5" fill="currentColor"></circle><circle cx="16.5" cy="13" r="0.5" fill="currentColor"></circle></svg>
+                  </div>
+                  <h3 class="service-card-title">AI Integration</h3>
+                  <p class="service-card-desc">— Embed AI capabilities like chatbots, automation pipelines, and intelligent workflows to enhance product functionality and user experience.</p>
+                </div>
+                <div class="service-card-footer">
+                  <span>Continue on next page</span>
+                  <span>—</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="t-sect scroll-mt-16 t-soft-bg">
+      <div class="t-wrap">
+        <header class="section-header">
+          <div class="section-meta-row t-label" data-fade>
+            <span>02 — About</span>
+            <span>Uttar Pradesh, IN</span>
+          </div>
+          <span class="t-rule" data-rule></span>
+          <h2 class="t-h2" style="margin-top:2rem;" data-split>About</h2>
+        </header>
+
+        <div class="about-grid">
+          <p class="about-statement" data-words-scrub>
+            I think in systems before I write code. Architecture first, then implementation.
+          </p>
+
+          <div class="about-narrative">
+            <p class="t-prose" style="font-size:1.25rem; font-weight:600;" data-fade>
+              Hi, I'm Waris Ali 👋
+            </p>
+            <p class="t-prose" data-fade>
+              I’m a BCA student passionate about <strong>Software Development, Web Development, Artificial Intelligence, and Machine Learning</strong>. I’m on a continuous journey of learning, building, and improving my technical skills.
+            </p>
+
+            <div data-fade>
+              <h3 class="about-subhead">💻 What I’m currently working on:</h3>
+              <ul class="about-bullet-list">
+                <li>Strengthening C/C++ and Python fundamentals</li>
+                <li>Learning Data Structures &amp; Algorithms (DSA)</li>
+                <li>Exploring Web Development with HTML, CSS, JavaScript, and modern web technologies</li>
+                <li>Building knowledge of SQL, OOP, and Software Development</li>
+                <li>Exploring Artificial Intelligence and Machine Learning</li>
+                <li>Building practical projects to turn ideas into real-world applications</li>
+              </ul>
+            </div>
+
+            <div data-fade>
+              <h3 class="about-subhead">🚀 My Approach:</h3>
+              <p class="t-prose">
+                I believe the best way to learn technology is by understanding concepts, solving problems, and building real projects. I enjoy challenging myself with new technologies, developing creative web experiences, and continuously improving my technical and problem-solving abilities.
+              </p>
+            </div>
+
+            <div data-fade>
+              <h3 class="about-subhead">🎯 Career Goal:</h3>
+              <p class="t-prose">
+                To grow into a skilled Software Developer with expertise in Web Development and AI/ML, build meaningful digital solutions, and eventually contribute to innovative products that make a real impact.
+              </p>
+            </div>
+
+            <div data-fade>
+              <h3 class="about-subhead">🛠️ Tech Interests:</h3>
+              <p class="t-prose" style="font-family:var(--font-mono); font-size:0.95rem; line-height:1.8;">
+                C/C++ • Python • HTML • CSS • JavaScript • Web Development • DSA • OOP • SQL • AI/ML • Software Development • Git/GitHub • Problem Solving
+              </p>
+            </div>
+
+            <p class="t-prose" style="font-weight:700; margin-top:1.5rem;" data-fade>
+              Always learning. Always building. Always improving. 🚀
+            </p>
+
+            <div class="magnetic-wrap" style="margin-top: 2.5rem;" data-fade>
+              <a class="t-btn" href="#contact">Let's talk →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="t-sect scroll-mt-16 t-ink-bg t-clip-x">
+      <div class="t-wrap">
+        <header class="section-header" style="color:var(--t-invert-ink);">
+          <div class="section-meta-row t-label" style="color:var(--t-invert-muted);" data-fade>
+            <span>03 — Contact</span>
+            <span>Open to work</span>
+          </div>
+          <span class="t-rule" style="background:var(--t-invert-ink);" data-rule></span>
+          <h2 class="t-h2" style="margin-top:2rem;" data-split>Contact</h2>
+        </header>
+
+        <div class="contact-grid">
+          <div class="contact-left">
+            <p class="t-display" style="font-size:clamp(2.6rem, 6.6vw, 5.4rem); text-shadow:none;" data-split>
+              Let's build something good.
+            </p>
+            <p class="t-lead" style="color:var(--t-invert-muted); max-width:28rem;" data-fade>
+              Hiring for a frontend, React or Next.js role, or have something worth building? I reply to every message.
+            </p>
+            <div data-fade>
+              <div class="magnetic-wrap">
+                <a href="mailto:rayeenwarisali@gmail.com" class="t-btn t-btn--light">Say hello</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Row List -->
+          <ul class="contact-list" data-stagger>
+            <li>
+              <a href="mailto:rayeenwarisali@gmail.com" class="t-contact-row">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1.25em" width="1.25em" xmlns="http://www.w3.org/2000/svg"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></svg>
+                <span style="min-width:0; flex:1;">
+                  <span class="t-label block" style="color:var(--t-invert-muted);">Email</span>
+                  <span style="display:block; font-family:var(--t-heading); font-weight:700; font-size:1.15rem; word-break:break-all;">rayeenwarisali@gmail.com</span>
+                </span>
+                <span class="t-contact-arrow" aria-hidden="true">↗</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.linkedin.com/in/waris-ali-36739641a" target="_blank" rel="noopener noreferrer" class="t-contact-row">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1.25em" width="1.25em" xmlns="http://www.w3.org/2000/svg"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>
+                <span style="min-width:0; flex:1;">
+                  <span class="t-label block" style="color:var(--t-invert-muted);">LinkedIn</span>
+                  <span style="display:block; font-family:var(--t-heading); font-weight:700; font-size:1.15rem;">Waris Ali</span>
+                </span>
+                <span class="t-contact-arrow" aria-hidden="true">↗</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://github.com/prowaris" target="_blank" rel="noopener noreferrer" class="t-contact-row">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 496 512" height="1.25em" width="1.25em" xmlns="http://www.w3.org/2000/svg"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+                <span style="min-width:0; flex:1;">
+                  <span class="t-label block" style="color:var(--t-invert-muted);">GitHub</span>
+                  <span style="display:block; font-family:var(--t-heading); font-weight:700; font-size:1.15rem;">github.com/prowaris</span>
+                </span>
+                <span class="t-contact-arrow" aria-hidden="true">↗</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/waris.xd" target="_blank" rel="noopener noreferrer" class="t-contact-row">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1.25em" width="1.25em" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
+                <span style="min-width:0; flex:1;">
+                  <span class="t-label block" style="color:var(--t-invert-muted);">Instagram</span>
+                  <span style="display:block; font-family:var(--t-heading); font-weight:700; font-size:1.15rem;">@waris.xd</span>
+                </span>
+                <span class="t-contact-arrow" aria-hidden="true">↗</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-marquee-wrap" aria-hidden="true">
+        <div class="footer-marquee-word" id="footer-marquee">
+          <span>Waris Ali — Waris Ali — Waris Ali — Waris Ali — </span>
+          <span>Waris Ali — Waris Ali — Waris Ali — Waris Ali — </span>
+        </div>
+      </div>
+
+      <div class="t-wrap">
+        <div class="footer-bottom-bar t-label">
+          <span>© 2026 Waris Ali</span>
+          <button type="button" class="back-to-top-btn" id="back-to-top">Back to top ↑</button>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- CASE STUDY MODAL / DRAWER -->
+  <div class="case-study-overlay" id="case-study-modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="case-study-modal mono-sharp">
+      <button class="case-study-close" id="case-study-close-btn" aria-label="Close case study">✕</button>
+      <div id="case-study-content">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- CDN GSAP & ScrollTrigger Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Application Logic -->
+  <script src="script.js"></script>
+</body>
+</html>
